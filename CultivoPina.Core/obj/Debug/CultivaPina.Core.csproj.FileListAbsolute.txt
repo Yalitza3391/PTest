@@ -1,0 +1,11 @@
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\CultivaPina.Core.dll
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\CultivaPina.Core.pdb
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\CultivaPina.EntityFramework.dll
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\EntityFramework.dll
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\CultivaPina.EntityFramework.pdb
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\CultivaPina.EntityFramework.dll.config
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\bin\Debug\EntityFramework.xml
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\obj\Debug\CultivaPina.Core.csprojAssemblyReference.cache
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\obj\Debug\CultivaPina.Core.csproj.CopyComplete
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\obj\Debug\CultivaPina.Core.dll
+C:\Users\Arely.castro\source\repos\CultivaPiña\CultivoPina.Core\obj\Debug\CultivaPina.Core.pdb

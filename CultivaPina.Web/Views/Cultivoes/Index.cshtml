@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CultivaPina.EntityFramework.Models.Cultivo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Pina.PinaNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sector.SectorNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CultivoFechaSiembra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CultivoPeso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CultivoFechaRecoleccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CultivoHectareas)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pina.PinaNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sector.SectorNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CultivoFechaSiembra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CultivoPeso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CultivoFechaRecoleccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CultivoHectareas)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CultivoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CultivoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CultivoId })
+        </td>
+    </tr>
+}
+
+</table>

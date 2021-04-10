@@ -1,0 +1,55 @@
+﻿<@model IEnumerable<CultivaPiñaWeb.ViewModel.CultivoProductivoViewModel>
+
+@{
+    ViewBag.Title = "Proyeccion de cultivos";
+
+}
+    
+<h2>Proyeccion de cultivos</h2>
+    
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SectorName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.PinaName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalCultivos)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Mes)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.SectorName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PinaName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Total)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TotalCultivos)
+    </td>
+    
+    <td>
+        @Html.DisplayFor(modelItem => item.Mes)
+    </td>
+
+
+</tr>
+    }
+
+</table>

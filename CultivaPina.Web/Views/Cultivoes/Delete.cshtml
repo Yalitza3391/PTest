@@ -1,0 +1,72 @@
+﻿@model CultivaPina.EntityFramework.Models.Cultivo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Cultivo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pina.PinaNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pina.PinaNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sector.SectorNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sector.SectorNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoFechaSiembra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoFechaSiembra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoPeso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoPeso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoFechaRecoleccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoFechaRecoleccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoHectareas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoHectareas)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model CultivaPina.EntityFramework.Models.Cultivo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cultivo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pina.PinaNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pina.PinaNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sector.SectorNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sector.SectorNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoFechaSiembra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoFechaSiembra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoPeso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoPeso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoFechaRecoleccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoFechaRecoleccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CultivoHectareas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CultivoHectareas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CultivoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<CultivaPiñaWeb.ViewModel.CultivoProductivoViewModel>
+
+@{
+    ViewBag.Title = "GetSector";
+
+}
+
+<h2>Cultivos Mas Productivos</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PinaId)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.PinaName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalCultivos)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PinaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PinaName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCultivos)
+            </td>
+
+
+
+        </tr>
+    }
+
+</table>
